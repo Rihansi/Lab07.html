@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transitions and Transforms</title>
+  <style>
+    /* Q1: Transition Button */
+    .transition-button {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.5s;
+    }
+    .transition-button:hover {
+      background-color: green;
+    }
+
+    /* Q2: Transition Div */
+    .transition-div {
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      transition: width 1s;
+    }
+    .transition-div:hover {
+      width: 200px;
+    }
+
+    /* Q3: Transition Text */
+    .transition-text {
+      font-size: 16px;
+      transition: font-size 0.3s;
+    }
+    .transition-text:hover {
+      font-size: 24px;
+    }
+
+    /* Q4: Transition Image */
+    .transition-image {
+      width: 200px;
+      height: auto;
+      transition: opacity 0.8s;
+    }
+    .transition-image:hover {
+      opacity: 0.5;
+    }
+
+    /* Q5: Scale Div */
+    .scale-div {
+      width: 100px;
+      height: 100px;
+      background-color: teal;
+      transition: transform 0.3s;
+    }
+    .scale-div:hover {
+      transform: scale(1.5);
+    }
+
+    /* Q6: Scale Image */
+    .scale-image {
+      width: 200px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    .scale-image:hover {
+      transform: scale(0.75);
+    }
+
+    /* Q7: Translate Button */
+    .translate-button {
+      background-color: purple;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .translate-button:hover {
+      transform: translate(50px, 20px);
+    }
+
+    /* Q8: Translate Div */
+    .translate-div {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      transition: transform 0.3s;
+    }
+    .translate-div:hover {
+      transform: translateX(-100px);
+    }
+
+    /* Q9: Skew Heading */
+    .skew-heading {
+      font-size: 24px;
+      transition: transform 0.3s;
+    }
+    .skew-heading:hover {
+      transform: skewX(20deg);
+    }
+
+    /* Q10: Skew Paragraph */
+    .skew-paragraph {
+      font-size: 16px;
+      transition: transform 0.3s;
+    }
+    .skew-paragraph:hover {
+      transform: skewY(15deg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Q1: Transition Button -->
+  <button class="transition-button">Hover Me!</button>
+
+  <!-- Q2: Transition Div -->
+  <div class="transition-div"></div>
+
+  <!-- Q3: Transition Text -->
+  <p class="transition-text">Hover over this text to change font size.</p>
+
+  <!-- Q4: Transition Image -->
+  <img src="your-image-url.jpg" alt="Transition Image" class="transition-image">
+
+  <!-- Q5: Scale Div -->
+  <div class="scale-div"></div>
+
+  <!-- Q6: Scale Image -->
+  <img src="your-image-url.jpg" alt="Scale Image" class="scale-image">
+
+  <!-- Q7: Translate Button -->
+  <button class="translate-button">Move Me!</button>
+
+  <!-- Q8: Translate Div -->
+  <div class="translate-div"></div>
+
+  <!-- Q9: Skew Heading -->
+  <h1 class="skew-heading">Skew this Heading</h1>
+
+  <!-- Q10: Skew Paragraph -->
+  <p class="skew-paragraph">Skew this paragraph on hover.</p>
+
+</body>
+</html>
